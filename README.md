@@ -1,4 +1,4 @@
-This is the README file for the HK_NEON project.
+This is the README file for the HK_NEON project.  
 It is a course project of MEJO 187 at the UNC Hussman School of Journalism and Media.
 
 ## Project Structure
@@ -20,5 +20,5 @@ The HK_NEON project incorporates ChatGPT AI-generated content.
 
 ## Copyright
 
-Author: Terry MO
+Author: Terry MO 
 Term: Fall 2026
