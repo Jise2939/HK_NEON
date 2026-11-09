@@ -20,5 +20,5 @@ The HK_NEON project incorporates ChatGPT AI-generated content.
 
 ## Copyright
 
-Author: Terry MO 
+Author: Terry MO   
 Term: Fall 2026
