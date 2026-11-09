@@ -1,3 +1,5 @@
+/* Present Page Styles */
+
 #present-page {
   max-width: 1200px;
   margin: auto;
@@ -16,7 +18,14 @@
   z-index: 0;
 }
 
+/* Photo container in case the video cannot play */
 .photo-container {
+  z-index: -1;
+  background-image: url("../img/present.jpeg");
+  background-size: contain;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  /* background-position: center 25%; */
   position: relative;
   height: 30vh;
 }
@@ -89,7 +98,7 @@
   height: auto;
 }
 
-/* Next Chapter */
+/* Next Page */
 
 .future-link {
   color: #9ecedf;
@@ -124,6 +133,8 @@
   }
 
   .photo-container {
+    background-size: cover;
+    background-position: center 25%;
     height: 70vh;
   }
 

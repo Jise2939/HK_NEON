@@ -1,3 +1,5 @@
+/* Future Page Styles */
+
 #future-page {
   max-width: 1200px;
   margin: auto;
@@ -13,6 +15,8 @@
 .future-intro {
   margin-bottom: 50px;
 }
+
+/* Museum Section */
 
 .museum {
   display: flex;
@@ -31,12 +35,20 @@
   margin: 0 0 20px;
 }
 
+/* Next Page */
+
 .back-link {
   color: #fff;
   font-size: 20px;
   font-weight: bold;
   text-decoration: none;
 }
+
+.back-link:hover {
+  color: #ff975f;
+}
+
+/* Video */
 
 .museum-video {
   margin-bottom: 50px;

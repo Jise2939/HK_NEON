@@ -1,3 +1,5 @@
+/* Age Page Styles */
+
 #age-page {
   max-width: 1200px;
   margin: auto;
@@ -33,6 +35,8 @@
 .history {
   margin-bottom: 50px;
 }
+
+/* Timeline */
 
 .timeline {
   display: flex;
@@ -134,6 +138,8 @@ summary {
   object-position: center;
 }
 
+/* Next Page */
+
 .next {
   margin-top: 25px;
 }
@@ -209,8 +215,8 @@ summary {
   }
 
   .gallery figcaption {
-  font-size: 15px;
-}
+    font-size: 15px;
+  }
 
   /* Craft */
 
@@ -227,7 +233,7 @@ summary {
     object-fit: cover; /* Crops the photo to fill the available space. */
     object-position: center;
   }
-  
+
   .present-link {
     padding-top: 15px;
     font-size: 20px;
