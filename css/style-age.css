@@ -134,6 +134,10 @@ summary {
   object-position: center;
 }
 
+.next {
+  margin-top: 25px;
+}
+
 .present-link {
   color: #ff975f;
   font-size: 20px;
@@ -204,6 +208,10 @@ summary {
     height: 340px;
   }
 
+  .gallery figcaption {
+  font-size: 15px;
+}
+
   /* Craft */
 
   .craft {
@@ -222,10 +230,6 @@ summary {
   
   .present-link {
     padding-top: 15px;
-    font-size: 20px;
-  }
-
-  .gallery figcaption {
     font-size: 20px;
   }
 

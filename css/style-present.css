@@ -136,10 +136,6 @@
     flex: 1;
   }
 
-  .gallery img {
-    height: 340px;
-  }
-
   .present-case {
     flex-direction: row;
     align-items: center;
