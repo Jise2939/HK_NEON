@@ -134,12 +134,6 @@ summary {
   object-position: center;
 }
 
-.next {
-  margin-top: 15px;
-  border-top: 1px solid #555;
-  padding-top: 10px;
-}
-
 .present-link {
   color: #ff975f;
   font-size: 20px;
@@ -225,9 +219,7 @@ summary {
     object-fit: cover; /* Crops the photo to fill the available space. */
     object-position: center;
   }
-  .next {
-    margin-top: 40px;
-  }
+  
   .present-link {
     padding-top: 15px;
     font-size: 20px;
