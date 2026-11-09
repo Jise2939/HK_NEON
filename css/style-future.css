@@ -1,74 +1,71 @@
-
 #future-page {
-    max-width: 1200px;
-    margin: auto;
-    padding: 100px 24px 60px;
-    font-size: 15px;
+  max-width: 1200px;
+  margin: auto;
+  padding: 100px 24px 60px;
+  font-size: 15px;
 }
 
 #future-page p {
-    color: #ddd;
-    line-height: 1.7;
+  color: #ddd;
+  line-height: 1.7;
 }
 
 .future-intro {
-    margin-bottom: 50px;
+  margin-bottom: 50px;
 }
 
 .museum {
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-    margin-bottom: 80px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin-bottom: 80px;
 }
 
 #mplus-image {
-    width: 100%;
-    height: auto;
+  width: 100%;
+  height: auto;
 }
 
 .museum-title {
-    font-size: 30px;
-    margin: 0 0 20px;
+  font-size: 30px;
+  margin: 0 0 20px;
 }
 
 .back-link {
-    color: #fff;
-    font-size: 20px;
-    font-weight: bold;
-    text-decoration: none;
+  color: #fff;
+  font-size: 20px;
+  font-weight: bold;
+  text-decoration: none;
 }
 
 .museum-video {
-    margin-bottom: 60px;
+  margin-bottom: 60px;
 }
 
 .museum-video iframe {
-    display: block;
-    width: 100%;
-    height: auto;
-    aspect-ratio: 16 / 9;
-    border: none;
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9;
+  border: none;
 }
 
-
 @media screen and (min-width: 1080px) {
+  #future-page {
+    padding: 130px 60px 80px;
+  }
 
-    #future-page {
-        padding: 130px 60px 80px;
-    }
+  .museum {
+    flex-direction: row;
+    align-items: center;
+    gap: 60px;
+  }
 
-    .museum {
-        flex-direction: row;
-        align-items: center;
-        gap: 60px;
-    }
+  #mplus-image {
+    width: 50%;
+  }
 
-    #mplus-image {
-        width: 50%;
-    }
-
-    .museum-text {
-        flex: 1;
-    }
+  .museum-text {
+    flex: 1;
+  }
 }

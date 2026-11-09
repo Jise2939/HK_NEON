@@ -1,176 +1,167 @@
 #present-page {
-    max-width: 1200px;
-    margin: auto;
-    padding: 30px 24px 60px;
-    font-size: 15px;
+  max-width: 1200px;
+  margin: auto;
+  padding: 30px 24px 60px;
+  font-size: 15px;
 }
 
-
 .present-video {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: top 50%;
-    z-index: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top 50%;
+  z-index: 0;
 }
 
 .photo-container {
-    position: relative;
-    height: 30vh;
+  position: relative;
+  height: 30vh;
 }
 
 .present-background {
-    position: relative;
-    background-color: rgba(0, 0, 0, 0.8);
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.8);
 }
-
 
 /* Introduction */
 
 .present-intro {
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-    margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin-bottom: 30px;
 }
 
 /* Reasons */
 
 .reasons {
-    margin-bottom: 50px;
+  margin-bottom: 50px;
 }
 
 .reason-list {
-    display: flex;
-    flex-direction: column;
-    gap: 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
 }
 
 .reason-list div {
-    border-top: 2px solid #9ecedf;
-    padding-top: 15px;
+  border-top: 2px solid #9ecedf;
+  padding-top: 15px;
 }
 
 .reason-list h3 {
-    color: #9ecedf;
-    font-size: 20px;
-    margin: 0 0 10px;
+  color: #9ecedf;
+  font-size: 20px;
+  margin: 0 0 10px;
 }
-
 
 /* Before and After */
 
 .comparison {
-    margin-bottom: 50px;
+  margin-bottom: 50px;
 }
 
 .comparison-text {
-    max-width: 650px;
-    margin-bottom: 30px;
+  max-width: 650px;
+  margin-bottom: 30px;
 }
 
 #compared {
-    width: 100%;
-    height: 260px;
-    object-fit: cover;
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
 }
-
 
 /* Case Study */
 
 .present-case {
-    display: flex;
-    flex-direction: column;
-    gap: 25px;
-    margin-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  margin-bottom: 50px;
 }
 
 .present-case img {
-    width: 100%;
-    height: auto;
+  width: 100%;
+  height: auto;
 }
-
 
 /* Next Chapter */
 
-
 .next {
-    margin-top: 15px;
-    border-top: 1px solid #555;
-    padding-top: 10px;
+  margin-top: 15px;
+  border-top: 1px solid #555;
+  padding-top: 10px;
 }
 
 .future-link {
-    color: #9ecedf;
-    font-size: 20px;
-    font-weight: bold;
-    text-decoration: none;
+  color: #9ecedf;
+  font-size: 20px;
+  font-weight: bold;
+  text-decoration: none;
 }
 
 .future-link:hover {
-    color: #fff;
+  color: #fff;
 }
-
 
 /* Desktop */
 
 @media screen and (min-width: 1080px) {
+  #present-page {
+    padding: 30px 60px 30px;
+  }
 
-    #present-page {
-        padding: 30px 60px 30px;
-    }
+  .present-intro {
+    flex-direction: row;
+    align-items: center;
+    gap: 50px;
+  }
 
-    .present-intro {
-        flex-direction: row;
-        align-items: center;
-        gap: 50px;
-    }
+  .present-intro-text {
+    flex: 1;
+  }
 
-    .present-intro-text {
-        flex: 1;
-    }
+  .present-intro h1 {
+    font-size: 64px;
+  }
 
-    .present-intro h1 {
-        font-size: 64px;
-    }
-
-    .photo-container {
+  .photo-container {
     height: 70vh;
-}
+  }
 
-    .reason-list {
-        flex-direction: row;
-        gap: 30px;
-    }
+  .reason-list {
+    flex-direction: row;
+    gap: 30px;
+  }
 
-    .reason-list div {
-        flex: 1;
-    }
+  .reason-list div {
+    flex: 1;
+  }
 
-    .gallery img {
-        height: 340px;
-    }
+  .gallery img {
+    height: 340px;
+  }
 
-    .present-case {
-        flex-direction: row;
-        align-items: center;
-        gap: 60px;
-    }
+  .present-case {
+    flex-direction: row;
+    align-items: center;
+    gap: 60px;
+  }
 
-    .present-case-text {
-        flex: 1;
-    }
+  .present-case-text {
+    flex: 1;
+  }
 
-    .present-case img {
-        width: 50%;
-    }
+  .present-case img {
+    width: 50%;
+  }
 
-    .future-link {
+  .future-link {
     padding-top: 15px;
     font-size: 20px;
-}
-
+  }
 }
