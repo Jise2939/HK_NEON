@@ -16,7 +16,7 @@ The HK_NEON project is intended for educational purposes only. Any content, imag
 
 ## AI Usage
 
-The HK_NEON project incorporates ChatGPT AI-generated content.
+The project incorporates ChatGPT AI-generated content.
 
 ## Copyright
 
