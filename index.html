@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hong Kong Neon</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cactus+Classical+Serif&family=Noto+Serif+TC:wght@200..900&family=Tapestry&family=Uncial+Antiqua&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cactus+Classical+Serif&family=IM+Fell+Double+Pica:ital@0;1&family=Noto+Serif+TC:wght@200..900&family=Tapestry&family=Uncial+Antiqua&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/style-age.css" />
+    <!--Font Awesome icons for the hambuger menu-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <nav class="mobile-nav">
+        <a class="menu-item logo-box" href="index.html">
+          <img class="logo" src="img/icon.jpeg" alt="Logo" />
+        </a>
+        <i class="fa fa-bars" onclick="openNav()"></i
+        ><!--the Font Awesome hambuger icon with the JS function that will make the burger work-->
+      </nav>
+      <nav class="menu desktop-nav">
+        <a class="logo-link menu-item" href="index.html">
+          <img class="logo" src="https://picsum.photos/25/25" alt="Logo" />
+        </a>
+        <a class="menu-item" href="age.html">GOLDEN AGE</a>
+        <a class="menu-item" href="present.html">PRESENT</a>
+        <a class="menu-item" href="future.html">FUTURE</a>
+      </nav>
+    </header>
+    
+    <main>
+      <div class="container" id="homepage">
+        <h1 class="page-title">
+          <span class="line-top">Hong Kong's</span>
+          <span class="neon-text">Fading Neon</span>
+        </h1>
+
+        <p class="description">
+          Once the defining glow of Hong Kong's streets, neon is slowly
+          disappearing from the skyline. Explore its golden age, changing
+          present, and uncertain future.
+        </p>
+
+        <a class="begin-button" href="age.html"> EXPLORE THE STORY &rarr; </a>
+      </div>
+    </main>
+
+    <!--The offscreen nav that opens when you click the hamburger menu-->
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+        >&times;</a
+      >
+      <a href="age.html">GOLDEN AGE</a>
+      <a href="present.html">PRESENT</a>
+      <a href="future.html">FUTURE</a>
+    </div>
+
+    <!--The JavaScript that will open and close the hamburger menu. You must put this code at the bottom of EVERY HTML file, just about the closing body tag!-->
+    <script>
+      function openNav() {
+        document.getElementById("mySidenav").style.width = "250px";
+        document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+      }
+
+      function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+        document.body.style.backgroundColor = "black";
+      }
+    </script>
+  </body>
+</html>

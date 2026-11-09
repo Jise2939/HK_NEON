@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hong Kong Neon</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cactus+Classical+Serif&family=Noto+Serif+TC:wght@200..900&family=Tapestry&family=Uncial+Antiqua&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cactus+Classical+Serif&family=IM+Fell+Double+Pica:ital@0;1&family=Noto+Serif+TC:wght@200..900&family=Tapestry&family=Uncial+Antiqua&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/style-age.css" />
+    <link rel="stylesheet" href="css/style-present.css">
+    <!--Font Awesome icons for the hambuger menu-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <nav class="mobile-nav">
+        <a class="menu-item logo-box" href="index.html">
+          <img class="logo" src="img/icon.jpeg" alt="Logo" />
+        </a>
+        <i class="fa fa-bars" onclick="openNav()"></i
+        ><!--the Font Awesome hambuger icon with the JS function that will make the burger work-->
+      </nav>
+      <nav class="menu desktop-nav">
+        <a class="logo-link menu-item" href="index.html">
+          <img class="logo" src="https://picsum.photos/25/25" alt="Logo" />
+        </a>
+        <a class="menu-item" href="age.html">GOLDEN AGE</a>
+        <a class="menu-item" href="present.html">PRESENT</a>
+        <a class="menu-item" href="future.html">FUTURE</a>
+      </nav>
+    </header>
+
+    
+<main>
+   <video class="present-video" autoplay muted loop playsinline>
+    <source src="video/present-video.mp4" type="video/mp4">
+</video>
+
+<div class="photo-container"></div>
+
+<div class="present-background">
+    <div id="present-page">
+
+        <section class="present-intro">
+
+            <div>
+                <h1 class="intro-title">The Disappearing Glow</h1>
+
+                <p class="intro-text">
+                    Once a defining feature of Hong Kong's
+                    streets, traditional neon signs are
+                    gradually disappearing. As the city
+                    modernizes, many familiar signs have
+                    been removed or replaced by LED displays.
+                </p>
+            </div>
+
+        </section>
+        <!-- Reasons -->
+        <section class="reasons">
+
+            <h2>Why Are the Signs Disappearing?</h2>
+
+            <div class="reason-list">
+
+                <div>
+                    <h3>Safety Concerns</h3>
+                    <p>
+                        Large hanging signs can become
+                        dangerous as their structures age.
+                    </p>
+                </div>
+
+                <div>
+                    <h3>Maintenance Costs</h3>
+                    <p>
+                        Traditional neon signs require
+                        specialized skills and regular repairs.
+                    </p>
+                </div>
+
+                <div>
+                    <h3>Modern Technology</h3>
+                    <p>
+                        LED signs are often cheaper to maintain
+                        and more energy efficient.
+                    </p>
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- Before and After -->
+        <section class="comparison">
+
+            <h2>A Changing Cityscape</h2>
+
+            <p class="comparison-text">
+                As older buildings are renovated and
+                businesses change, Hong Kong's streets
+                are taking on a different appearance.
+                Comparing the past and present reveals
+                how much of the city's visual identity
+                has changed.
+            </p>
+
+            <div class="gallery">
+
+                <figure>
+                    <img id="compared" src="img/compared-before.jpeg"
+                         alt="Historic Hong Kong neon street">
+                    <figcaption>THEN — Hong Kong's neon era</figcaption>
+                </figure>
+
+                <figure>
+                    <img id="compared" src="img/compared-now.jpeg"
+                         alt="The same Hong Kong street today">
+                    <figcaption>NOW — A changing city</figcaption>
+                </figure>
+
+            </div>
+
+        </section>
+
+        <!-- Case Study -->
+        <section class="present-case">
+
+            <div class="present-case-text">
+                <h2>A Sign Removed</h2>
+
+                <p>
+                    In 2015, the famous neon cow sign outside
+                    Sammy's Kitchen was removed after decades
+                    above the streets of Sai Ying Pun.
+                    Its removal showed how an everyday
+                    advertisement could become an important
+                    piece of cultural history.
+                </p>
+            </div>
+
+            <img src="img/cow.jpeg"
+                 alt="Sammy's Kitchen neon cow sign">
+
+        </section>
+      
+
+        <div class="next">
+            <a class="future-link" href="future.html">FUTURE &rarr;</a>
+        </div>
+</div>
+    </div>
+</main>
+
+
+    <!--The offscreen nav that opens when you click the hamburger menu-->
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+        >&times;</a
+      >
+      <a href="age.html">GOLDEN AGE</a>
+      <a href="present.html">PRESENT</a>
+      <a href="future.html">FUTURE</a>
+    </div>
+
+    <!--The JavaScript that will open and close the hamburger menu. You must put this code at the bottom of EVERY HTML file, just about the closing body tag!-->
+    <script>
+      function openNav() {
+        document.getElementById("mySidenav").style.width = "250px";
+        document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+      }
+
+      function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+        document.body.style.backgroundColor = "black";
+      }
+    </script>
+  </body>
+</html>

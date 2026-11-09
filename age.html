@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hong Kong Neon</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cactus+Classical+Serif&family=Noto+Serif+TC:wght@200..900&family=Tapestry&family=Uncial+Antiqua&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cactus+Classical+Serif&family=IM+Fell+Double+Pica:ital@0;1&family=Noto+Serif+TC:wght@200..900&family=Tapestry&family=Uncial+Antiqua&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/style-age.css" />
+    <!--Font Awesome icons for the hambuger menu-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <nav class="mobile-nav">
+        <a class="menu-item logo-box" href="index.html">
+          <img class="logo" src="img/icon.jpeg" alt="Logo" />
+        </a>
+        <i class="fa fa-bars" onclick="openNav()"></i
+        ><!--the Font Awesome hambuger icon with the JS function that will make the burger work-->
+      </nav>
+      <nav class="menu desktop-nav">
+        <a class="logo-link menu-item" href="index.html">
+          <img class="logo" src="https://picsum.photos/25/25" alt="Logo" />
+        </a>
+        <a class="menu-item" href="age.html">GOLDEN AGE</a>
+        <a class="menu-item" href="present.html">PRESENT</a>
+        <a class="menu-item" href="future.html">FUTURE</a>
+      </nav>
+    </header>
+     
+<main>
+  <div class="container" id="age-page">
+
+    <section class="age-intro">
+
+        <img class="intro-image" src="img/age.jpeg"
+             alt="Hong Kong street filled with neon signs">
+
+        <div>
+
+            <h1 class="intro-title">A City of Neon</h1>
+
+            <p class="intro-text">
+                From the 1920s onward, neon signs began
+                transforming Hong Kong's streets. By the
+                1970s and 1980s, colorful advertisements
+                illuminated restaurants, cinemas, and
+                shops, creating one of the city's most
+                recognizable urban landscapes.
+            </p>
+        </div>
+
+    </section>
+
+<section class="history">
+
+    <h2>Neon Through Time</h2>
+
+    <div class="timeline">
+
+        <details>
+            <summary>1920s</summary>
+            <h3 class="timeline-title">The Arrival</h3>
+            <img class="timeline-image" src="img/hk1920s.jpg" alt="Early Hong Kong street">
+            <p class="timeline-text"> 
+                Neon signs first appeared in Hong Kong,
+                introducing a new way for businesses
+                to advertise.
+            </p>
+        </details>
+
+        <details>
+            <summary>1950s–60s</summary>
+            <h3 class="timeline-title">The Expansion</h3>
+            <img class="timeline-image" src="img/hk1950s.jpeg" alt="Hong Kong neon advertisements">
+            <p class="timeline-text">
+                Restaurants, cinemas, and shops
+                increasingly used neon signs to
+                attract customers.
+            </p>
+        </details>
+
+        <details>
+            <summary>1970s–80s</summary>
+            <h3 class="timeline-title">The Heyday</h3>
+            <img class="timeline-image" src="img/hk1970s.jpeg" alt="Hong Kong neon street at night">
+            <p class="timeline-text">
+                Elaborate neon signs filled commercial
+                streets, becoming an important part
+                of Hong Kong's visual identity.
+            </p>
+        </details>
+
+    </div>
+
+</section>
+
+    <section class="signs">
+
+        <h2>More Than Advertisements</h2>
+
+        <p class="signs-text">
+            Neon signs gave each business its own identity.
+            From restaurants to cinemas, their colorful
+            designs and Chinese characters helped shape
+            the character of Hong Kong's streets.
+        </p>
+
+        <div class="gallery">
+
+            <figure>
+                <img id="rest" src="img/restaurant.jpg"
+                     alt="Traditional restaurant neon sign">
+                <figcaption>Restaurant Signage</figcaption>
+            </figure>
+
+            <figure>
+                <img id="cinema" src="img/cinema.jpeg"
+                     alt="Traditional cinema neon sign">
+                <figcaption>Cinema Signage</figcaption>
+            </figure>
+        </div>
+
+    </section>
+
+    <section class="craft">
+
+        <div>
+            <h2>Made by Hand</h2>
+
+            <p class="craft-text">
+                Behind every glowing sign was the work
+                of skilled craftsmen. Glass tubes were
+                heated and carefully bent by hand to
+                create Chinese characters, symbols,
+                and unique designs.<br>
+                Each sign reflected both the identity
+                of a business and the craftsmanship
+                behind Hong Kong's neon culture.
+            </p>
+        </div>
+        <div>
+        <img id="craft-img" src="img/craft.jpeg"
+             alt="Craftsman bending glass tubes">
+        </div>
+    </section>
+
+    <div class="next">
+        <a class="present-link" href="present.html">PRESENT &rarr;</a>
+    </div>
+  </div>
+</main>
+
+
+
+    <!--The offscreen nav that opens when you click the hamburger menu-->
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+        >&times;</a
+      >
+      <a href="age.html">GOLDEN AGE</a>
+      <a href="present.html">PRESENT</a>
+      <a href="future.html">FUTURE</a>
+    </div>
+
+    <!--The JavaScript that will open and close the hamburger menu. You must put this code at the bottom of EVERY HTML file, just about the closing body tag!-->
+    <script>
+      function openNav() {
+        document.getElementById("mySidenav").style.width = "250px";
+        document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+      }
+
+      function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+        document.body.style.backgroundColor = "black";
+      }
+    </script>
+  </body>
+</html>

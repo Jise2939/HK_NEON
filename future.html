@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hong Kong Neon</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cactus+Classical+Serif&family=Noto+Serif+TC:wght@200..900&family=Tapestry&family=Uncial+Antiqua&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cactus+Classical+Serif&family=IM+Fell+Double+Pica:ital@0;1&family=Noto+Serif+TC:wght@200..900&family=Tapestry&family=Uncial+Antiqua&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/style-age.css" />
+    <link rel="stylesheet" href="css/style-present.css">
+     <link rel="stylesheet" href="css/style-future.css">
+
+    <!--Font Awesome icons for the hambuger menu-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <nav class="mobile-nav">
+        <a class="menu-item logo-box" href="index.html">
+          <img class="logo" src="img/icon.jpeg" alt="Logo" />
+        </a>
+        <i class="fa fa-bars" onclick="openNav()"></i
+        ><!--the Font Awesome hambuger icon with the JS function that will make the burger work-->
+      </nav>
+      <nav class="menu desktop-nav">
+        <a class="logo-link menu-item" href="index.html">
+          <img class="logo" src="https://picsum.photos/25/25" alt="Logo" />
+        </a>
+        <a class="menu-item" href="age.html">GOLDEN AGE</a>
+        <a class="menu-item" href="present.html">PRESENT</a>
+        <a class="menu-item" href="future.html">FUTURE</a>
+      </nav>
+    </header>
+    
+    
+<main>
+    <div id="future-page">
+
+        <section class="future-intro">
+            <h1 class="intro-title">Keeping the Lights Alive</h1>
+
+            <p class="intro-text">
+                Efforts to preserve Hong Kong's neon
+                heritage have grown as more signs disappear.
+            </p>
+        </section>
+
+        <section class="museum">
+
+            <img id="mplus-image" src="img/mplus.jpeg"
+                 alt="Preserved neon sign at M+ Museum">
+
+            <div class="museum-text">
+                <h2 class="future-title">Preserving Neon at M+</h2>
+
+                <p>
+                    M+, the museum of visual culture in
+                    the West Kowloon Cultural District,
+                    has collected historic neon signs
+                    and original design drawings since 2013.
+                </p>
+
+                <p>
+                    Its exhibition Conserving Neon Culture,
+                    which opened in 2021, examines the
+                    craft and conservation of these objects.
+                </p>
+
+                <p>
+                    Preservation allows visitors to experience
+                    a part of Hong Kong's visual history that
+                    has become increasingly difficult to
+                    encounter on the streets.
+                </p>
+            </div>
+
+        </section>
+
+        <section class="museum-video">
+
+    <h2 class="future-title">Watch the Story</h2>
+
+    <iframe
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/vBNAe85O38s?si=u3E9gnvoGCEoKaqj"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin"
+        allowfullscreen>
+    </iframe>
+</section>
+
+        <div class="next">
+            <a class="back-link" href="index.html">BACK TO HOME &rarr;</a>
+        </div>
+
+    </div>
+</main>
+
+
+    <!--The offscreen nav that opens when you click the hamburger menu-->
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+        >&times;</a
+      >
+      <a href="age.html">GOLDEN AGE</a>
+      <a href="present.html">PRESENT</a>
+      <a href="future.html">FUTURE</a>
+    </div>
+
+    <!--The JavaScript that will open and close the hamburger menu. You must put this code at the bottom of EVERY HTML file, just about the closing body tag!-->
+    <script>
+      function openNav() {
+        document.getElementById("mySidenav").style.width = "250px";
+        document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+      }
+
+      function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+        document.body.style.backgroundColor = "black";
+      }
+    </script>
+  </body>
+</html>
